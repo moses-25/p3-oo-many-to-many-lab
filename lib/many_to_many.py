@@ -54,7 +54,7 @@ class Contract:
         self.royalties: int = royalties
         Contract.all.append(self)
 
-    @classmethod
+    classmethod
     def contracts_by_date(cls, date):
         return [contract for contract in cls.all if contract.date == date]
     pass
